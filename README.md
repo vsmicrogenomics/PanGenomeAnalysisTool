@@ -1,8 +1,6 @@
 # PanGenomeAnalysisTool
 PanGenomeAnalysisTool: A Python script for pan-genome analysis, generating plots, and statistical insights. Analyze gene presence and absence in multiple genomes effortlessly.
 
-# Pan-Genome Analysis Script
-
 This Python script is designed for analyzing pan-genomes, specifically for estimating the parameters \(k\) and \(\gamma\) for the Heap Law equation: \(n = \kappa N^\gamma\), where \(n\) is the number of pangenome genes and \(N\) is the number of genomes. It takes the `gene_presence_absence.Rtab` output of the Roary tool as input and provides insights into whether the pan-genome is open or closed based on the estimated \(\gamma\) value.
 
 ## Features:
@@ -40,6 +38,12 @@ This Python script is designed for analyzing pan-genomes, specifically for estim
 
 5. **Interpreting Results**:
    - The script estimates \(k\) and \(\gamma\) for the Heap Law equation and determines whether the pan-genome is open or closed based on the \(\gamma\) value.
+
+5. **Test run**:
+  To demonstrate the usage of the `pan_genome_analysis.py` script, we provide a test directory with input and output subdirectories with test input and its output files. You can reproduce the analysis using the following command:
+
+   ```bash
+   python pan_genome_analysis.py -f input/gene_presence_absence.Rtab -o output -i 10
 
 # Acknowledgements
 
