@@ -49,14 +49,9 @@ This Python script is designed for analyzing pan-genomes, specifically for estim
 
 This script is designed to process the output files of the Roary tool and analyze pan-genomes. We would like to acknowledge the developers of the Roary tool for their contribution to the field of comparative genomics. The Roary tool is a valuable resource for pan-genome analysis, and its documentation is available at [Roary GitHub Repository](https://github.com/sanger-pathogens/Roary).
 
+# Citation
+
 If you are using the `pan_genome_analysis.py` script for your research, please consider citing it as follows:
 
 ```plaintext
 Sharma, V. (2024). pan_genome_analysis.py [Python script]. Retrieved from https://github.com/vsmicrogenomics/PanGenomeAnalysisTool
-
-
-**Acknowledgments**:
-    - This script utilizes libraries such as NumPy, Matplotlib, and SciPy for data analysis and visualization.
-
-Feel free to use and contribute to this pan-genome analysis tool for your research or bioinformatics projects.
-
