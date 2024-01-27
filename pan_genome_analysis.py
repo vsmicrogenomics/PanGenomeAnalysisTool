@@ -80,7 +80,7 @@ pan_genome_status = "open" if avg_gamma > 0 else "closed"
 # Create a single figure with two subplots
 plt.figure(figsize=(10, 8))
 
-# Subplot 1: Pan-genome and Modified Core-genome
+# Subplot 1: Pan-genome and Core-genome
 plt.subplot(1, 1, 1)
 title_font = FontProperties(weight='bold', size=14)
 
@@ -122,12 +122,12 @@ for num_selected_genomes in range(1, num_genomes + 1):  # Iterate from 1 to N
     x_core.extend([num_selected_genomes] * num_iterations)
     y_core.extend(avg_common_gene_counts)
 
-# Perform average curve fitting for the modified core-genome plot
+# Perform average curve fitting for the core-genome plot
 x_fit = np.array(list(range(1, num_genomes + 1)))  # Iterate from 1 to N
 avg_y_fit = np.mean([y_core[i*num_iterations:(i+1)*num_iterations] for i in range(num_genomes)], axis=1)
 pars, cov = curve_fit(f=heaps_law, xdata=x_fit, ydata=avg_y_fit, p0=[0, 0], bounds=(-np.inf, np.inf))
 
-# Plot the modified core-genome with average fit curve
+# Plot the core-genome with average fit curve
 plt.scatter(x_core, y_core, color='orange', marker='o', s=180, alpha=0.1, edgecolor='orange')  # Bubble-like spheres with light color
 plt.plot(x_fit, heaps_law(x_fit, pars[0], pars[1]), 'g-', linewidth=2)
 
