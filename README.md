@@ -40,7 +40,7 @@ This Python script is designed for analyzing pan-genomes, specifically for estim
    - The script estimates \(k\) and \(\gamma\) for the Heap Law equation and determines whether the pan-genome is open or closed based on the \(\gamma\) value.
 
 5. **Test run**:
-  To demonstrate the usage of the `pan_genome_analysis.py` script, we provide a test directory with input and output subdirectories with test input and its output files. You can reproduce the analysis using the following command:
+  To demonstrate the usage of the `pan_genome_analysis.py` script, we provide a test directory with input and output subdirectories with test input and its output     files. You can reproduce the analysis using the following command:
 
    ```bash
    python pan_genome_analysis.py -f input/gene_presence_absence.Rtab -o output -i 10
