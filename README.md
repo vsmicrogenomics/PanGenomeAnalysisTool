@@ -51,7 +51,7 @@ If you are using the `pan_genome_analysis.py` script for your research, please c
 Sharma, V. (2024). pan_genome_analysis.py [Python script]. Retrieved from https://github.com/vsmicrogenomics/PanGenomeAnalysisTool
 
 
-10. **Acknowledgments**:
+**Acknowledgments**:
     - This script utilizes libraries such as NumPy, Matplotlib, and SciPy for data analysis and visualization.
 
 Feel free to use and contribute to this pan-genome analysis tool for your research or bioinformatics projects.
